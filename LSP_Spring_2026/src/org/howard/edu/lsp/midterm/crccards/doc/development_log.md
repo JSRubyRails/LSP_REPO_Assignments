@@ -1,6 +1,6 @@
 Tool Used: ChatGPT
 
----
+
 
 ### Prompt 1
 "Implement a Java class called Task with fields taskId, description, and status. The default status should be OPEN. Include getters, a setter that validates status (OPEN, IN_PROGRESS, COMPLETE), and a toString method formatted as 'taskId description [status]'."
@@ -16,7 +16,7 @@ ChatGPT provided a Java implementation of the Task class including:
 ### Explanation
 This response helped me correctly structure the Task class and ensure that status validation followed the exact rules specified in the assignment.
 
----
+
 
 ### Prompt 2
 "What is the best data structure in Java to store objects if I need to quickly find them by ID and prevent duplicates?"
@@ -30,7 +30,7 @@ ChatGPT recommended using a HashMap because:
 ### Explanation
 This helped me choose HashMap for TaskManager, ensuring efficient task lookup and easy duplicate prevention.
 
----
+
 
 ### Prompt 3
 "Write a Java TaskManager class that stores Task objects, prevents duplicate IDs, allows searching by ID, and returns a list of tasks filtered by status."
@@ -45,7 +45,7 @@ ChatGPT generated a TaskManager class that:
 ### Explanation
 This response guided the implementation of TaskManager and ensured all required methods behaved correctly according to the CRC card responsibilities.
 
----
+
 
 ### Prompt 4
 "How should I structure Javadoc comments for a Java class and its methods?"
@@ -57,5 +57,3 @@ ChatGPT explained that:
 
 ### Explanation
 This helped me properly document my code to meet the assignment’s Javadoc requirement.
-
----

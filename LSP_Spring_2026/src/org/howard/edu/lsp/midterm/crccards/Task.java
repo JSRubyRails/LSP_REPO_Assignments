@@ -4,7 +4,7 @@ package org.howard.edu.lsp.midterm.crccards;
  * The Task class represents a task with an ID, description, and status.
  * Default status is OPEN.
  * 
- * @author Elias
+ * @author Elias Zegeye
  */
 public class Task {
     private String taskId;

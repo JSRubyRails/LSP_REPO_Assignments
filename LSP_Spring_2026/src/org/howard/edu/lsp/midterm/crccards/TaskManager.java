@@ -6,7 +6,7 @@ import java.util.*;
  * The TaskManager class manages a collection of Task objects.
  * It allows adding, finding, and retrieving tasks by status.
  * 
- * @author Elias
+ * @author Elias Zegeye
  */
 public class TaskManager {
     private Map<String, Task> tasks;
