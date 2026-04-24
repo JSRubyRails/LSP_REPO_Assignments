@@ -37,10 +37,12 @@ Part 4:
 - Code Snippet:
 	
 	import java.util.concurrent.CopyOnWriteArrayList;
+	
 	import java.util.concurrent.atomic.AtomicInteger; 
 	
 	public class RequestManager { 
 		private Atomic Integer nextId = new AtomicInteger(1);
+		
 		private List <String> requests = new CopyOnWriteArrayList<>();
 	
 		public void addRequest(String studentName) { 
