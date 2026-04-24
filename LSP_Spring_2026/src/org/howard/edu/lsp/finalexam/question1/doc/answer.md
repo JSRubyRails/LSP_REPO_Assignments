@@ -35,17 +35,16 @@ Part 4:
 - Description: Instead of relying on the synchronized keyword to manage concurrency, an alternative approach would be using classes from java.util.concurrent (AtomicInteger for the counter and CopyonWriteArrayList for the list), which are both thread-by-safe design. Using "AtomicInteger.getAndIncrement()" would perform the read-and-increment as a single atomic hardware operation, which would the eliminate the race condition on nextId. 
 
 - Code Snippet:
-
-import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.concurrent.atomic.AtomicInteger;
-
-public class RequestManager { 
-	private AtomicInteger nextId = new AtomicInteger(1);
-	private List <String> requests = new CopyOnWriteArrayList<>();
 	
+	import java.util.concurrent.CopyOnWriteArrayList;
+	import java.util.concurrent.atomic.AtomicInteger; 
 	
-	public void addRequest(String studentName) { 
-		int id = nextId.getAndIncrement(); 
-		requests.add("Request-" + id + " from " + studentName);
-	}       
-}
+	public class RequestManager { 
+		private Atomic Integer nextId = new AtomicInteger(1);
+		private List <String> requests = new CopyOnWriteArrayList<>();
+	
+		public void addRequest(String studentName) { 
+			int id = nextId.getAndIncrement(); 
+			requests.add("Request-" + id + " from " + studentName);
+		}  
+	}
